@@ -6,17 +6,58 @@
 .App {
   width: 100vw;
   height: 100vh;
-}
-.nav-bar {
-  height: 10%;
-  background-color: #131921;
-  .nav-left {
-    height: 100%;
-    width: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    img {
+  font-family: Arial, sans-serif;
+
+  .nav-container {
+    height: 100px;
+    min-width: 100%;
+
+    .nav-bar {
+      height: 60%;
+      background-color: #131921;
+
+      display: flex;
+      .nav-left {
+        height: 100%;
+        width: 15%;
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        img {
+          height: 48%;
+        }
+
+        .deliver-div {
+          display: flex;
+          width: fit-content;
+
+          color: #d6d6d6;
+          font-size: 12px;
+          font-weight: 600;
+
+          line-height: 13px;
+          #location-icon-container {
+            width: 20%;
+
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+
+            #location-icon {
+              width: 75%;
+              height: 75%;
+            }
+          }
+          span {
+            font-weight: 800;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .under-nav {
+      background-color: #232f3e;
       height: 40%;
     }
   }
