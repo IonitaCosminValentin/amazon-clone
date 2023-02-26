@@ -1,12 +1,39 @@
 import { useEffect } from 'react'
 import { SlArrowLeft, SlArrowRight } from 'react-icons/sl'
-import { slideShow } from './miscFunctions'
 
-const changeImage = (imgIndex: number, id: number): void => {
-  clearInterval(2)
+const slideShow = (images: string[]): void => {
+  let slideshowContainer = document.querySelector('.slideshow')
+
+  for (let i = 0; i < images.length; i++) {
+    let img = document.createElement('img')
+    img.setAttribute('src', images[i])
+    img.setAttribute('class', 'slideshow-element')
+
+    img.style.display = 'none'
+    slideshowContainer?.appendChild(img)
+  }
 }
 
 const Slideshow = () => {
+  const changeImage = (id: number = 0): void => {
+    let elements = document.querySelectorAll<HTMLElement>('.slideshow-element')
+    previousImage = currentImage
+    currentImage = currentImage + id
+
+    for (let i = 0; i < elements.length; i++) {
+      elements[i].style.display = 'none'
+    }
+
+    if (currentImage < 0) currentImage = elements.length - 1
+    if (currentImage > elements.length - 1) currentImage = 0
+    if (previousImage) elements[previousImage].style.display = 'none'
+
+    elements[currentImage].style.display = 'block'
+  }
+  const resetInterval = (id: number) => {
+    clearInterval(id)
+    return window.setInterval(() => changeImage(1), 5000)
+  }
   let images = [
     'https://m.media-amazon.com/images/I/71tIrZqybrL._SX3000_.jpg',
     'https://m.media-amazon.com/images/I/61TD5JLGhIL._SX3000_.jpg',
@@ -14,11 +41,13 @@ const Slideshow = () => {
     'https://m.media-amazon.com/images/I/61DUO0NqyyL._SX3000_.jpg',
     'https://m.media-amazon.com/images/I/71qid7QFWJL._SX3000_.jpg'
   ]
-  let imgIndex = 0
-
+  let currentImage = 0
+  let previousImage: number | undefined
   useEffect(() => {
     slideShow(images)
+    changeImage()
   })
+  let intervalId: number = window.setInterval(() => changeImage(1), 5000)
 
   return (
     <div className='slideshow'>
@@ -26,7 +55,8 @@ const Slideshow = () => {
         <button
           className='left-button'
           onClick={() => {
-            changeImage(imgIndex, -1)
+            changeImage(-1)
+            intervalId = resetInterval(intervalId)
           }}
         >
           <SlArrowLeft size={40} />
@@ -34,7 +64,8 @@ const Slideshow = () => {
         <button
           className='right-button'
           onClick={() => {
-            changeImage(imgIndex, 1)
+            changeImage(1)
+            intervalId = resetInterval(intervalId)
           }}
         >
           <SlArrowRight size={40} />
