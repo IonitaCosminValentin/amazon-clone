@@ -328,4 +328,49 @@ const hidePanel = (e: any): void => {
     .querySelector('.darker-background')
     ?.setAttribute('style', 'display:none')
 }
-export { addOption, countrySelect, showPanel, hidePanel }
+
+const slideShow = (images: string[]): void => {
+  let slideshowContainer = document.querySelector('.slideshow')
+
+  for (let i = 0; i < images.length; i++) {
+    let img = document.createElement('img')
+
+    img.setAttribute('src', images[i])
+    img.setAttribute('alt', '404')
+    img.setAttribute('class', 'slideshow-image')
+
+    img.style.display = 'none'
+    slideshowContainer?.appendChild(img)
+  }
+
+  let elements = document.querySelectorAll<HTMLElement>('.slideshow-image')
+  let imgIndex = 0
+  slideShowNext(imgIndex, elements)
+}
+
+const slideShowNext = (
+  imgIndex: number,
+  elements: NodeListOf<HTMLElement>
+): void => {
+  if (imgIndex >= elements.length) {
+    imgIndex = 0
+    elements[elements.length - 1].style.display = 'none'
+  }
+
+  elements[imgIndex].style.display = 'block'
+  if (elements[imgIndex - 1]) elements[imgIndex - 1].style.display = 'none'
+
+  imgIndex++
+  setTimeout(() => {
+    slideShowNext(imgIndex, elements)
+  }, 500)
+}
+
+export {
+  addOption,
+  countrySelect,
+  showPanel,
+  hidePanel,
+  slideShow,
+  slideShowNext
+}

@@ -1,9 +1,11 @@
+import '../Nav.scss'
 import { useEffect } from 'react'
 import amazon from '../assets/amazon.png'
 import { BsSearch } from 'react-icons/bs'
 import { BsCart4 } from 'react-icons/bs'
 import SelectLocation from './SelectLocation'
 import SelectLanguage from './SelectLanguage'
+import { RxHamburgerMenu } from 'react-icons/rx'
 import Login from './Login'
 import { addOption, countrySelect, showPanel, hidePanel } from './miscFunctions'
 
@@ -47,7 +49,23 @@ const NavBar = () => {
           </div>
         </div>
       </div>
-      <div className='under-nav'></div>
+      <div className='under-nav'>
+        <div className='nav-left'>
+          <div className='on-hover text'>
+            <RxHamburgerMenu className='all-icon' size={25} />
+            All
+          </div>
+          <div className='on-hover text'>Today's Deals Customer Service</div>
+          <div className='on-hover text'>Registry</div>
+          <div className='on-hover text'>Gift Card</div>
+          <div className='on-hover text'>Sell</div>
+        </div>
+        <div className='nav-right'>
+          <div className='on-hover text float-to-right'>
+            Shop great deals now
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
