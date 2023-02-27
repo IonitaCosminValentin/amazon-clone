@@ -17,6 +17,13 @@ const NavBar = () => {
 
   return (
     <div className='nav-container'>
+      <a
+        id='top'
+        href='#top'
+        style={{ position: 'absolute', top: '0', opacity: '0' }}
+      >
+        To Top
+      </a>
       <div className='nav-bar'>
         <div className='nav-left'>
           <img src={amazon} alt='' className='logo' />

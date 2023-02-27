@@ -1,0 +1,76 @@
+.footer {
+  background-color: #232f3e;
+  width: 100vw;
+  min-height: 55vh;
+  .top-side {
+    background-color: #37475a;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+  .middle {
+    display: flex;
+    color: white;
+    font-size: 13px;
+    justify-content: center;
+    align-items: center;
+
+    height: 350px;
+    line-height: 30px;
+
+    div {
+      margin: 2%;
+      min-height: 300px;
+    }
+  }
+  .divider {
+    height: 1px;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.445);
+    margin-top: 20px;
+  }
+  .bottom-side {
+    height: 100px;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 12px;
+
+    .highlight {
+      max-height: 15px;
+      min-width: 100px;
+
+      border: 1px solid rgba(255, 255, 255, 0.308);
+      border-radius: 5px;
+
+      color: rgb(235, 235, 235);
+      padding: 10px;
+      margin: 5px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #logo {
+      height: 25px;
+      margin-right: 5%;
+    }
+    #usa-flag {
+      height: 10px;
+      margin-right: 10px;
+    }
+  }
+}
