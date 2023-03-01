@@ -1,0 +1,18 @@
+@media only screen and (max-width: 1234px) {
+  .App {
+    width: 100vw;
+    height: 100vh;
+    .body {
+      .top-container {
+        grid-template-columns: 32% 32% 32%;
+        column-gap: 20px;
+        row-gap: 20px;
+      }
+    }
+  }
+  .slideshow {
+    .button-container {
+      width: 95% !important;
+    }
+  }
+}

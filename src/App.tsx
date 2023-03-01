@@ -1,4 +1,7 @@
 import './App.scss'
+import './components/ScreenSizes/Small.scss'
+import './components/ScreenSizes/Medium.scss'
+import './components/ScreenSizes/Big.scss'
 import Body from './components/Body'
 import NavBar from './components/NavBar'
 import Slideshow from './components/Slideshow'

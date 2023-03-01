@@ -1,6 +1,7 @@
 .nav-container {
   height: 100px;
   min-width: 100%;
+  min-width: 1500px;
 
   .under-nav {
     background-color: #232f3e;
@@ -32,6 +33,7 @@
 
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 
     .nav-left {
       height: 100%;
@@ -75,6 +77,7 @@
           }
         }
         .opened-container {
+          z-index: 1;
           display: none;
           position: absolute;
           top: 0;
@@ -213,7 +216,7 @@
       }
     }
     .search-form {
-      min-width: 65%;
+      width: 60%;
       height: 70%;
 
       display: flex;
@@ -307,6 +310,7 @@
         }
 
         .language-opened {
+          z-index: 1;
           display: none;
           flex-direction: column;
           padding: 10px;
@@ -391,6 +395,7 @@
           font-size: 15px;
         }
         .opened {
+          z-index: 1;
           display: none;
           flex-direction: column;
           background-color: white;

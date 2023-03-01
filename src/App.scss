@@ -8,13 +8,14 @@
 
   scroll-behavior: smooth;
 }
-
+html {
+  background: #e3e6e6;
+}
 .App {
   width: 100vw;
   height: 100vh;
   font-family: sans-serif;
-  background: #e3e6e6;
-  overflow-x: hidden;
+
   .slideshow {
     position: relative;
     width: 100vw;
@@ -25,7 +26,7 @@
     .slideshow-element {
       display: none;
       cursor: pointer;
-      width: 79%;
+      width: 1500px;
     }
 
     .button-container {
@@ -76,11 +77,13 @@
     }
     .top-container {
       margin-left: 15px;
-      width: 78%;
+      width: 1500px;
+
       display: grid;
-      grid-template-columns: 24% 24% 24% 24%;
+      grid-template-columns: 23% 23% 23% 23%;
       column-gap: 20px;
       row-gap: 20px;
+
       align-items: center;
       justify-content: center;
       .gaming-accessories {
@@ -89,10 +92,13 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        width: 310px;
+        height: 330px;
 
         .gaming-accessories-container {
           display: grid;
           grid-template-columns: 50% 50%;
+
           font-size: 13px;
           cursor: pointer;
 
@@ -104,6 +110,8 @@
       .deals-and-promotions {
         background-color: white;
         padding: 20px 20px 0 20px;
+        width: 310px;
+        height: 330px;
 
         img {
           width: 94%;
@@ -114,14 +122,15 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-
+        width: 350px;
+        height: 350px;
         img {
           width: 75%;
         }
 
         .sign-in-section {
           background-color: white;
-          height: 130px;
+          height: 110px;
           width: 100%;
 
           display: flex;
@@ -144,7 +153,10 @@
           }
         }
       }
-      .cat {
+      .categories {
+        height: 330px;
+        width: 310px;
+
         div {
           text-align: center;
           font-size: 12px;
