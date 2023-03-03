@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/amazon-clone/static/css/main.1cf51333.css",
+    "main.js": "/amazon-clone/static/js/main.c894e68a.js",
+    "static/media/usaFlag.png": "/amazon-clone/static/media/usaFlag.51121d15048a2c2e5732.png",
+    "index.html": "/amazon-clone/index.html",
+    "main.1cf51333.css.map": "/amazon-clone/static/css/main.1cf51333.css.map",
+    "main.c894e68a.js.map": "/amazon-clone/static/js/main.c894e68a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1cf51333.css",
+    "static/js/main.c894e68a.js"
+  ]
+}
