@@ -1,0 +1,42 @@
+@media screen and (max-width: 1400px) {
+  .App {
+    overflow: visible;
+    .nav-container {
+      min-width: 100vw;
+      width: 100vw;
+      .under-nav {
+        width: 100vw;
+      }
+      .nav-bar {
+        justify-content: space-between;
+        min-width: 100vw;
+        width: 100vw;
+        .nav-left {
+          width: auto;
+          .deliver-div {
+            display: none;
+          }
+        }
+        .search-form {
+          width: 65%;
+        }
+      }
+    }
+    .slideshow {
+      width: 100vw;
+      .slideshow-element {
+        width: 95%;
+      }
+    }
+    .body {
+      width: 100vw;
+      margin: 0;
+      .top-container {
+        width: 95%;
+        justify-content: center;
+
+        margin: 0;
+      }
+    }
+  }
+}

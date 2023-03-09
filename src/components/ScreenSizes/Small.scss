@@ -1,0 +1,25 @@
+@media screen and (max-width: 850px) {
+  .App {
+    .nav-container {
+      .nav-bar {
+        .nav-left {
+          width: 15%;
+        }
+        .search-form {
+          width: 40%;
+          .option-container {
+            min-width: 40px;
+          }
+        }
+        .nav-right {
+          width: 35%;
+        }
+      }
+    }
+  }
+  .body {
+    .top-container {
+      grid-template-columns: 45% 45% !important;
+    }
+  }
+}

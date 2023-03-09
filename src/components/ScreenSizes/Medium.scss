@@ -1,8 +1,48 @@
-@media only screen and (max-width: 1234px) {
+@media only screen and (max-width: 1100px) {
   .App {
     width: 100vw;
     height: 100vh;
+    overflow: scroll;
+
+    .nav-container {
+      .nav-bar {
+        .nav-left {
+          width: 15%;
+        }
+        .search-form {
+          width: 60%;
+          input {
+            min-width: 80%;
+          }
+          .option-container {
+            min-width: 7%;
+          }
+        }
+        .nav-right {
+          width: 25%;
+          .select-language-container {
+            .select-language {
+              #usa-flag {
+                width: 13px;
+              }
+            }
+          }
+
+          .login {
+            font-size: 12px;
+
+            #highlight {
+              font-size: 13px;
+            }
+          }
+          .returns-and-orders {
+            display: none;
+          }
+        }
+      }
+    }
     .body {
+      top: -20%;
       .top-container {
         grid-template-columns: 32% 32% 32%;
         column-gap: 20px;
