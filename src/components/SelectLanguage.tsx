@@ -1,21 +1,15 @@
 import usaFlag from '../assets/usaFlag.png'
 import { IoMdArrowDropdown } from 'react-icons/io'
 
-const SelectLanguage = ({
-  showPanel,
-  hidePanel
-}: {
-  showPanel: Function
-  hidePanel: Function
-}) => {
+const SelectLanguage = () => {
   return (
     <div
       className='select-language-container'
-      onMouseEnter={e => {
-        showPanel(e.currentTarget.children[0])
+      onMouseEnter={(e: any) => {
+        e.currentTarget.children[0].style = 'display:flex'
       }}
-      onMouseLeave={e => {
-        hidePanel(e.currentTarget.children[0])
+      onMouseLeave={(e: any) => {
+        e.currentTarget.children[0].style = 'display:none'
       }}
     >
       <div className='language-opened'>

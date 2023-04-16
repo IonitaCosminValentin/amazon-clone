@@ -1,20 +1,14 @@
 import { IoMdArrowDropdown } from 'react-icons/io'
 
-const Login = ({
-  showPanel,
-  hidePanel
-}: {
-  showPanel: Function
-  hidePanel: Function
-}) => {
+const Login = () => {
   return (
     <div
       className='login-container on-hover'
-      onMouseEnter={e => {
-        showPanel(e.currentTarget.children[0])
+      onMouseEnter={(e: any) => {
+        e.currentTarget.children[0].style = 'display: flex'
       }}
-      onMouseLeave={e => {
-        hidePanel(e.currentTarget.children[0])
+      onMouseLeave={(e: any) => {
+        e.currentTarget.children[0].style = 'display: none'
       }}
     >
       <div className='opened'>

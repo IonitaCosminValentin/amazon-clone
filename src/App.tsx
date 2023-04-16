@@ -6,6 +6,7 @@ import Body from './components/Body'
 import NavBar from './components/NavBar'
 import Slideshow from './components/Slideshow'
 import Footer from './components/Footer'
+import FooterMobile from './components/FooterMobile'
 
 function App () {
   return (
@@ -14,6 +15,7 @@ function App () {
       <Slideshow />
       <Body />
       <Footer />
+      <FooterMobile />
     </div>
   )
 }

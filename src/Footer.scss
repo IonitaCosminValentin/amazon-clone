@@ -13,9 +13,13 @@
     font-size: 12px;
     font-weight: bold;
 
-    a {
+    span {
       color: white;
       text-decoration: none;
+    }
+    span:hover {
+      cursor: pointer;
+      text-decoration: underline;
     }
   }
   .middle {
@@ -31,6 +35,10 @@
     div {
       margin: 2%;
       min-height: 300px;
+    }
+    span:hover {
+      text-decoration: underline;
+      cursor: pointer;
     }
   }
   .divider {
@@ -63,10 +71,13 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
+      cursor: pointer;
     }
     #logo {
       height: 25px;
       margin-right: 5%;
+      cursor: pointer;
     }
     #usa-flag {
       height: 10px;

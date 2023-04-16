@@ -178,4 +178,46 @@ html {
       }
     }
   }
+  .footer-mobile {
+    display: none;
+
+    width: 100vw;
+    background-color: #232f3e;
+    margin-top: 50px;
+    .top-side {
+      background-color: #37475a;
+      height: 50px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-size: 12px;
+      font-weight: bold;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+    .middle {
+      display: flex;
+      color: white;
+      background-color: #232f3e;
+      font-size: 13px;
+      justify-content: center;
+      align-items: center;
+
+      line-height: 30px;
+
+      div {
+        margin: 2%;
+        font-size: 15px;
+        font-weight: bold;
+        width: 45%;
+        min-height: 300px;
+        text-align: center;
+      }
+    }
+  }
 }

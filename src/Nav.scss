@@ -34,6 +34,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    position: relative;
 
     .nav-left {
       height: 100%;
@@ -276,18 +277,6 @@
       align-items: center;
       justify-content: space-evenly;
 
-      .darker-background {
-        display: none;
-        background-color: rgba(0, 0, 0, 0.281);
-
-        width: 100vw;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: -1;
-      }
-
       .select-language-container {
         width: 20%;
         height: 100%;
@@ -383,6 +372,7 @@
           }
         }
       }
+
       .login-container {
         cursor: pointer;
         color: white;
@@ -488,6 +478,15 @@
         #cart-icon {
           font-size: 30px;
         }
+      }
+
+      .login-container-mobile {
+        display: none;
+        color: white;
+        font-size: 13px;
+
+        align-items: center;
+        justify-content: center;
       }
     }
   }

@@ -315,18 +315,4 @@ const countrySelect = (): void => {
   }
 }
 
-const showPanel = (e: any): void => {
-  e.style = 'display:flex;'
-  document
-    .querySelector('.darker-background')
-    ?.setAttribute('style', 'display:flex')
-}
-const hidePanel = (e: any): void => {
-  e.style = 'display:none;'
-
-  document
-    .querySelector('.darker-background')
-    ?.setAttribute('style', 'display:none')
-}
-
-export { addOption, countrySelect, showPanel, hidePanel }
+export { addOption, countrySelect }

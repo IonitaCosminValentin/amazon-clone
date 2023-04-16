@@ -7,7 +7,8 @@ import SelectLocation from './SelectLocation'
 import SelectLanguage from './SelectLanguage'
 import { RxHamburgerMenu } from 'react-icons/rx'
 import Login from './Login'
-import { addOption, countrySelect, showPanel, hidePanel } from './miscFunctions'
+import LoginMobile from './LoginMobile'
+import { addOption, countrySelect } from './miscFunctions'
 
 const NavBar = () => {
   useEffect(() => {
@@ -17,12 +18,8 @@ const NavBar = () => {
 
   return (
     <div className='nav-container'>
-      <a
-        id='top'
-        href='#top'
-        style={{ position: 'absolute', top: '0', opacity: '0' }}
-      >
-        To Top
+      <a id='top' href='#top' style={{ height: '0px', display: 'block' }}>
+        Top
       </a>
       <div className='nav-bar'>
         <div className='nav-left'>
@@ -41,9 +38,10 @@ const NavBar = () => {
         <div className='nav-right'>
           <div className='darker-background'></div>
 
-          <SelectLanguage showPanel={showPanel} hidePanel={hidePanel} />
+          <SelectLanguage />
 
-          <Login showPanel={showPanel} hidePanel={hidePanel} />
+          <LoginMobile />
+          <Login />
 
           <div className='returns-and-orders on-hover'>
             Returns <br />

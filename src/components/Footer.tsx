@@ -7,50 +7,77 @@ const Footer = () => {
   return (
     <div className='footer'>
       <div className='top-side'>
-        <a href='#top'>Back to top</a>
+        <span
+          onClick={() => {
+            document.querySelector('#top')?.scrollIntoView()
+          }}
+        >
+          Back to top
+        </span>
       </div>
       <div className='middle'>
         <div className='left-side'>
           <h3>Get to Know Us</h3>
           <br />
-          Careers <br />
-          Blog <br />
-          About Amazon <br />
-          Investor Relations <br />
-          Amazon Devices <br />
-          Amazon Science <br />
+          <span>Careers</span>
+          <br />
+          <span> Blog</span>
+          <br />
+          <span> About Amazon </span>
+          <br />
+          <span>Investor Relations</span>
+          <br />
+          <span>Amazon Devices </span>
+          <br />
+          <span> Amazon Science </span>
+          <br />
         </div>
         <div className='middle1'>
           <h3>Make Money with Us</h3>
           <br />
-          Sell products on Amazon <br />
-          Sell on Amazon Business <br />
-          Sell Apps on Amazon <br />
-          Become an Affiliate <br />
-          Advertise Your Products <br />
-          Self-Publish with Us <br />
-          Host an Amazon Hub <br />
-          See More Make Money With Us <br />
+          <span>Sell products on Amazon</span>
+          <br />
+          <span>Sell on Amazon Business </span>
+          <br />
+          <span>Sell Apps on Amazon</span>
+          <br />
+          <span>Become an Affiliate</span>
+          <br />
+          <span>Advertise Your Products</span>
+          <br />
+          <span> Self-Publish with Us</span>
+          <br />
+          <span>Host an Amazon Hub </span>
+          <br />
+          <span>See More Make Money With Us</span> <br />
         </div>
         <div className='middle2'>
           <h3>Amazon Payment Products</h3>
           <br />
-          Amazon Business Card <br />
-          Shop with Points <br />
-          Reload Your Balance <br />
-          Amazon Curency Converter <br />
+          <span>Amazon Business Card</span>
+          <br />
+          <span>Shop with Points </span>
+          <br />
+          <span>Reload Your Balance</span> <br />
+          <span>Amazon Curency Converter</span> <br />
         </div>
         <div className='right-side'>
           <h3>Let Us Help You</h3>
           <br />
-          Amazon and COVID-19 <br />
-          Your Account <br />
-          Your Orders <br />
-          Shipping Rates & Polices <br />
-          Returns & Replacements <br />
-          Manage Your Content and Devices <br />
-          Amazon Assistant <br />
-          Help <br />
+          <span>Amazon and COVID-19</span>
+          <br />
+          <span>Your Account </span>
+          <br />
+          <span>Your Orders</span>
+          <br />
+          <span>Shipping Rates & Polices </span>
+          <br />
+          <span>Returns & Replacements</span>
+          <br />
+          <span>Manage Your Content and Devices</span>
+          <br />
+          <span>Amazon Assistant</span> <br />
+          <span>Help</span> <br />
         </div>
       </div>
 
